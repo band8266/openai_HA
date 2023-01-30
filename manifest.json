@@ -1,0 +1,10 @@
+{
+    "id": "openai",
+    "name": "OpenAI",
+    "domain": "openai",
+    "integration_type": "service",
+    "description": "Integration for generating text with the OpenAI API",
+    "version": "1.0.0",
+    "author": "band8266",
+    "loggers": ["openai"]
+}
