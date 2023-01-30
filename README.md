@@ -1,25 +1,7 @@
-This is a component for the open-source home automation platform, Home Assistant, that uses OpenAI's API to generate text in response to a service call.
-
-Installation
-Copy the openai directory to your Home Assistant custom_components directory.
-Add the following to your Home Assistant configuration file:
-yaml
-Copy code
-openai:
-  api_key: YOUR_OPENAI_API_KEY
-Restart Home Assistant.
-Usage
-The component sets up a service that can be called to generate text. To call the service, use the following in a script or automation:
-
-yaml
-Copy code
-service: openai.openai
-data:
-  prompt: PROMPT_TEXT
-  temp: TEMPERATURE
-Where PROMPT_TEXT is the text prompt to give to OpenAI and TEMPERATURE is the temperature to use for the text generation (a value between 0 and 1).
-
-The generated text will be set as the state of text.openai.
-
-Credits
-This component was created using the OpenAI API.
+<div class="markdown prose w-full break-words dark:prose-invert dark"><h1>OpenAI Text Generation Component for Home Assistant</h1><p>This is a component for the open-source home automation platform, Home Assistant, that uses OpenAI's API to generate text in response to a service call.</p><h2>Installation</h2><ol><li>Copy the <code>openai</code> directory to your Home Assistant <code>custom_components</code> directory.</li><li>Add the following to your Home Assistant configuration file:</li></ol><pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">yaml</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-attr">openai:</span>
+  <span class="hljs-attr">api_key:</span> <span class="hljs-string">YOUR_OPENAI_API_KEY</span>
+</code></div></div></pre><ol start="3"><li>Restart Home Assistant.</li></ol><h2>Usage</h2><p>The component sets up a service that can be called to generate text. To call the service, use the following in a <code>script</code> or <code>automation</code>:</p><pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">yaml</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-attr">service:</span> <span class="hljs-string">openai.openai</span>
+<span class="hljs-attr">data:</span>
+  <span class="hljs-attr">prompt:</span> <span class="hljs-string">PROMPT_TEXT</span>
+  <span class="hljs-attr">temp:</span> <span class="hljs-string">TEMPERATURE</span>
+</code></div></div></pre><p>Where <code>PROMPT_TEXT</code> is the text prompt to give to OpenAI and <code>TEMPERATURE</code> is the temperature to use for the text generation (a value between 0 and 1).</p><p>The generated text will be set as the state of <code>text.openai</code>.</p><h2>Credits</h2><p>This component was created using the OpenAI API.</p></div>
