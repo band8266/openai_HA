@@ -3,7 +3,6 @@ import logging
 import random
 from homeassistant.helpers import area_registry, template
 openai.api_key = API_KEY
-#        {%- set area_info.printed = true %} {%- set area_info = namespace(printed=false) %}
 _LOGGER = logging.getLogger(__name__)
 ATTR_PROMPT = "prompt"
 ATTR_TEMP = ""
@@ -74,6 +73,5 @@ def setup(hass, config):
 
     hass.services.register("openai", "openai", generate_text)
 
-    # Return boolean to indicate that initialization was successful.
     return True
 
