@@ -1,0 +1,27 @@
+openai:
+  # Service name as shown in UI
+  name: OpenAI
+  description: OPENAI Service
+
+  # Different fields that your service accepts
+  fields:
+    # Key of the field
+    prompt:
+      # Field name as shown in UI
+      name: Prompt
+      required: true
+      description: Enter the prompt to OPENAI
+      example: "Why are lights bright"
+      selector:
+        text:
+      # The default field value
+#
+    temp:
+      name: Temp
+      description: Temp to set model
+      default: .5
+      selector:
+        number:
+          min: 0
+          max: 1
+          step: .1
