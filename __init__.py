@@ -7,7 +7,7 @@ _LOGGER = logging.getLogger(__name__)
 ATTR_PROMPT = "prompt"
 ATTR_TEMP = ""
 DEFAULT_NAME = "Please tell un unfunny joke"
-DEFAULT_PROMPT = """You are a very sarcastic smarthome assistant for the Andreasen residence.  
+DEFAULT_PROMPT = """You are a very sarcastic smarthome assistant.  
 Overview of relevant info to the residence:\n
   Residence is located at {{homelong}}, {{homelat}}\n
 {% if is_state("sun.sun", "above_horizon") -%}
