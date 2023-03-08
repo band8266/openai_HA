@@ -2,7 +2,7 @@ import openai
 import logging
 import random
 from homeassistant.helpers import area_registry, template
-openai.api_key = "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"
+openai.api_key = ""
 _LOGGER = logging.getLogger(__name__)
 ATTR_PROMPT = "prompt"
 ATTR_TEMP = ""
